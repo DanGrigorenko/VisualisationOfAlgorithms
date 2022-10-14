@@ -1,7 +1,7 @@
 # Курсовая работа "_Визуализация алгоритмов и структур данных_"
 
 ## Описание
-Это desktop приложения под ОС Linux Ubuntu 20.04 и ниже. Целью курсового проекта было передать как можно точно и детально, анимацию работы алгоритма или структуры данных. Вдохнавлением для создания данного приложения, послужил сайт [visualgo](https://visualgo.net/en).
+Это desktop приложения под ОС Linux Ubuntu 20.04 и выше. Целью курсового проекта было передать как можно точно и детально, анимацию работы алгоритма или структуры данных. Вдохнавлением для создания данного приложения, послужил сайт [visualgo](https://visualgo.net/en).
 ___
 
 ## Инструменты
@@ -16,12 +16,16 @@ ___
 
 ### Алгоритмы
 1. Сортировки (__Bubble, Selection, Insertion, Shaker__)
-2. Графы (Нахождение кратчайшего пути по алгоритму "__Дейкстры__")
+2. Графы (Нахождение кратчайшего пути по алгоритму __Дейкстры__)
 ### Структуры данных
 3. Односвязный список (__Односвязный список, Стек__)
 4. Хеш-таблица (__Линейное, Квадротичное зондирование__)
 ___
 
+## Запуск 
+
+Для запуска приложения необходимо иметь ОС Linux Ubuntu 20.04 и выше, а также установленный Qt Creator с версией Qt 5 и выше.
+___
 ## Пример реализации QGraphicsScene
 Для каждого окна был написан свой виджет унаследованный от класса ``QGraphicsView``,
 для отрисовки элементов, используя член класса ``QGraphicsScene``.
@@ -31,15 +35,18 @@ ___
 
 ```c++
 QGraphicsScene *scene = new QGraphicsScene(this);;
-    scene->setItemIndexMethod(QGraphicsScene::NoIndex);
-    scene->setSceneRect(-300, -300, 600, 600);
-    setScene(scene);
-    setCacheMode(CacheBackground);
-    setViewportUpdateMode(BoundingRectViewportUpdate);
-    setRenderHint(QPainter::Antialiasing);
-    setTransformationAnchor(AnchorUnderMouse);
-    setMinimumSize(400, 400);
+scene->setItemIndexMethod(QGraphicsScene::NoIndex);
+scene->setSceneRect(-300, -300, 600, 600);
+setScene(scene);
+setCacheMode(CacheBackground);
+setViewportUpdateMode(BoundingRectViewportUpdate);
+setRenderHint(QPainter::Antialiasing);
+setTransformationAnchor(AnchorUnderMouse);
+setMinimumSize(400, 400);
 ```
+
+
+
 
 
 
