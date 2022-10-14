@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ListWindow</class>
+ <widget class="QMainWindow" name="ListWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: #D7E1E9;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCghdrf">
+    <property name="title">
+     <string>Справка</string>
+    </property>
+    <widget class="QMenu" name="menu">
+     <property name="title">
+      <string>Структуры данных</string>
+     </property>
+     <addaction name="separator"/>
+     <addaction name="action_4"/>
+     <addaction name="action_5"/>
+    </widget>
+    <addaction name="menu"/>
+    <addaction name="action_2"/>
+   </widget>
+   <addaction name="menuCghdrf"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="action"/>
+  </widget>
+  <action name="action">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/IMG/pkL_aLB4L_I.jpg</normaloff>:/IMG/pkL_aLB4L_I.jpg</iconset>
+   </property>
+   <property name="text">
+    <string>Вернуться</string>
+   </property>
+   <property name="toolTip">
+    <string>Вернуться</string>
+   </property>
+  </action>
+  <action name="action_4">
+   <property name="text">
+    <string>Список</string>
+   </property>
+  </action>
+  <action name="action_5">
+   <property name="text">
+    <string>Стек</string>
+   </property>
+  </action>
+  <action name="action_2">
+   <property name="text">
+    <string>Использование</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

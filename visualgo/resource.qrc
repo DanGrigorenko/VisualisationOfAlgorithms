@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/img"/>
+    <qresource prefix="/">
+        <file>IMG/sorting2.gif</file>
+        <file>IMG/graph.gif</file>
+        <file>IMG/list.gif</file>
+        <file>IMG/hashtable.gif</file>
+        <file>IMG/visualgo.jpeg</file>
+        <file>IMG/pkL_aLB4L_I.jpg</file>
+        <file>IMG/doc_2022-04-03_23-25-59.mp4</file>
+    </qresource>
+</RCC>
